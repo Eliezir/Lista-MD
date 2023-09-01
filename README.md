@@ -4,6 +4,7 @@
 #### 1. Escrever um programa que determina se um dado número inteiro é primo ou não.
 
 
+
 #### 2. Escrever um programa para listar números primos sequencialmente. Você deve otimizar o programa para que ele liste o maior número possível de primos em 60 segundos.
 
 
@@ -26,3 +27,16 @@
 
 
 #### 10. Generalize o programa da questão anterior para funcionar com n congruências ao invés de somente 3, onde n será dado pelo usuário.
+
+ENTRADA: 
+-Quantidade das n congruências (0 < n <= 100)
+-n linhas com os valores b e m separados por um espaço
+
+EXEMPLO DE ENTRADA: 
+3
+4 5
+1 3
+2 7
+
+SAÍDA: 
+-Valor de X que satisfaça as congruências (Se esse X existir)
