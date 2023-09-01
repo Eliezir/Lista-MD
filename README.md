@@ -28,15 +28,15 @@
 
 #### 10. Generalize o programa da questão anterior para funcionar com n congruências ao invés de somente 3, onde n será dado pelo usuário.
 
-ENTRADA: 
--Quantidade das n congruências (0 < n <= 100)
--n linhas com os valores b e m separados por um espaço
+ENTRADA: <br><br>
+-Quantidade das n congruências (0 < n <= 100) <br>
+-n linhas com os valores b e m separados por um espaço <br><br>
 
-EXEMPLO DE ENTRADA: 
-3
-4 5
-1 3
-2 7
+EXEMPLO DE ENTRADA: <br><br>
+3 <br>
+4 5 <br>
+1 3 <br>
+2 7 <br> <br>
 
-SAÍDA: 
+SAÍDA: <br><br>
 -Valor de X que satisfaça as congruências (Se esse X existir)
