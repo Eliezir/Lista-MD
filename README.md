@@ -36,27 +36,20 @@ b mod m.
 o Teorema Chinês do Resto. (Lembre-se de verificar se os módulos são coprimos).
 
 
-10. ** Generalize o programa da questão anterior para funcionar com n congruências ao
-invés de somente 3, onde n será dado pelo usuário. **
+10. **Generalize o programa da questão anterior para funcionar com n congruências ao
+invés de somente 3, onde n será dado pelo usuário.**
 
-ENTRADA:
+        ENTRADA:
 
--Quantidade das n congruências (0 < n <= 100) 
+        -Quantidade das n congruências (0 < n <= 100) 
+        -n linhas com os valores b e m separados por um espaço 
 
--n linhas com os valores b e m separados por um espaço 
+        EXEMPLO DE ENTRADA: 
 
+        3 
+        4 5 
+        1 3 
+        2 7
 
-EXEMPLO DE ENTRADA: 
-
-3 
-
-4 5 
-
-1 3 
-
-2 7
-
-
-SAÍDA: 
-
--Valor de X que satisfaça as congruências (Se esse X existir)
+        SAÍDA: 
+        -Valor de X que satisfaça as congruências (Se esse X existir)
