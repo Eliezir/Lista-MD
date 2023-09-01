@@ -31,6 +31,21 @@ mdc(a, b) = s · a + t · b.
 8. Escrever um programa para encontrar a solução de uma congruência do tipo ax ≡
 b mod m.
 
+        ENTRADA:
+
+        -1 linha contendo os valores de a, b e m separadas por 1 espaço 
+        
+        SAÍDA: 
+        -Valor(es) de X que satisfaça a  congruência (Caso possível)
+
+        **EXEMPLO**
+        ENTRADA: 
+        33 38 280
+
+        SAÍDA:
+        A congruência possui 1 solução(ões)
+        X[1] = 86
+
 
 9. Escrever um programa para encontrar a solução única de três congruências usando
 o Teorema Chinês do Resto. (Lembre-se de verificar se os módulos são coprimos).
@@ -44,12 +59,18 @@ invés de somente 3, onde n será dado pelo usuário.**
         -Quantidade das n congruências (0 < n <= 100) 
         -n linhas com os valores b e m separados por um espaço 
 
-        EXEMPLO DE ENTRADA: 
-
-        3 
-        4 5 
-        1 3 
-        2 7
-
         SAÍDA: 
         -Valor de X que satisfaça as congruências (Se esse X existir)
+
+        **EXEMPLO** 
+
+        ENTRADA: 
+        3 
+        2 3 
+        4 5 
+        6 7
+
+        SAÍDA:
+        X = 104
+
+        

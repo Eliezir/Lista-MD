@@ -1,5 +1,5 @@
 /*
-Escrever um programa para encontrar a solução de uma congruência do tipo ax ≡ b mod m.
+8. Escrever um programa para encontrar a solução de uma congruência do tipo ax ≡ b mod m.
 */
 
 #include <stdio.h>

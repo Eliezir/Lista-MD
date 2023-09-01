@@ -1,3 +1,8 @@
+/*
+10. Generalize o programa da questão anterior para funcionar com n congruências ao
+invés de somente 3, onde n será dado pelo usuário.
+*/
+
 #include <stdio.h>
 int inverse(int a, int m){
     int i = 1;
@@ -50,7 +55,7 @@ int main(){
     scanf("%d", &n);
 
     int x = read(n);
-    printf("%d", x);
+    printf("X = %d", x);
 
     return 0;
 }
