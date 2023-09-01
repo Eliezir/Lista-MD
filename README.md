@@ -26,6 +26,7 @@ mdc(a, b) = s · a + t · b.
 
 
 7. Escrever um programa para encontrar o inverso de a mod b.
+
         ENTRADA:
 
         -1 linha contendo os valores de a e m separadas por 1 espaço 
@@ -53,7 +54,7 @@ b mod m.
         -Valor(es) de X que satisfaça a  congruência (Caso possível)
 
         ###EXEMPLO
-        
+
         ENTRADA: 
         33 38 280
 
