@@ -4,12 +4,12 @@
 int main(){
     int b, a, i; 
     printf("---------------------------------------------------\n\n");
-    printf("ENCONTRE O INVERSO DA EXPRESSÕA: a mod b \n\n");
+    printf("ENCONTRE O INVERSO DA EXPRESSÕA: a mod m \n\n");
     printf("---------------------------------------------------\n\n");
     printf("Digite o valor de 'a': \n");
     scanf("%d", &a);
 
-    printf("Digite o valor de 'b' : \n");
+    printf("Digite o valor de 'm' : \n");
     scanf("%d", &b);
 
     

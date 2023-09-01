@@ -26,7 +26,21 @@ mdc(a, b) = s · a + t · b.
 
 
 7. Escrever um programa para encontrar o inverso de a mod b.
+        ENTRADA:
 
+        -1 linha contendo os valores de a e m separadas por 1 espaço 
+        
+        SAÍDA: 
+        -Valor(es) do inverso de a
+
+        ###EXEMPLO
+
+        ENTRADA: 
+        3 7
+
+        SAÍDA:
+        A congruência possui 1 solução(ões) entre 0 e m
+        a^-1 = 5
 
 8. Escrever um programa para encontrar a solução de uma congruência do tipo ax ≡
 b mod m.
@@ -38,7 +52,8 @@ b mod m.
         SAÍDA: 
         -Valor(es) de X que satisfaça a  congruência (Caso possível)
 
-        **EXEMPLO**
+        ###EXEMPLO
+        
         ENTRADA: 
         33 38 280
 
@@ -62,7 +77,7 @@ invés de somente 3, onde n será dado pelo usuário.**
         SAÍDA: 
         -Valor de X que satisfaça as congruências (Se esse X existir)
 
-        **EXEMPLO** 
+        ###EXEMPLO 
 
         ENTRADA: 
         3 
