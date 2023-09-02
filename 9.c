@@ -31,10 +31,11 @@ int mod(int mmx, int mx, int cont){
 int main()
 {
     int m1,r1,m2,r2,m3,r3;
-    printf("Digite o dividendo e o resto:\n");
-    scanf("%d %d",&m1,&r1);
-    scanf("%d %d",&m2,&r2);
-    scanf("%d %d",&m3,&r3);
+    printf("Seja o sistema: x ≡ r1 mod(m1), x ≡ r2 mod(m2),..., x ≡ rk mod(mk )\n");
+    printf("Digite 3 linhas com os valores de 'r' e 'm' separados por um espaço\n");
+    scanf("%d %d",&r1,&m1);
+    scanf("%d %d",&r2,&m2);
+    scanf("%d %d",&r3,&m3);
     int eme = m1*m2*m3;
     int mm1 = eme/m1;
     int mm2 = eme/m2;
@@ -64,12 +65,12 @@ int main()
     int s3 = mod(mm3,m3,1);
     
     int xzao = (r1*mm1*s1)+(r2*mm2*s2)+(r3*mm3*s3);
-    printf("xzao: %d\n", xzao);
+    //printf("\n\nxzao: %d\n", xzao);
     
     int resultado = xzao/eme;
     int superesto = xzao%eme;
     
-    printf("superesto: %d\n",superesto);
+    printf("## Solução: %d \n",superesto);
     
     
 
