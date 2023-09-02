@@ -13,13 +13,15 @@ int main(){
     printf("Digite os valores (a e b) separados por um espaço\n");
     int a, b;
     scanf("%d %d", &a, &b);
-    int A = a, B = b; 
+   
     //Reodernando de forma Decrescente 
     if (b>a){
         int aux = b;
         b = a;
         a = aux;
     }
+
+    int A = a, B = b; 
     
     //Definindo os Arrays Necessários
     int quotient[100] = {}, values[100] = {};
@@ -35,7 +37,7 @@ int main(){
         a = b; 
         b = rest;
         i++;
-        printf("Valor de i é: %d\n", i);
+        //printf("Valor de i é: %d\n", i);
     }
     
   
@@ -57,9 +59,9 @@ int main(){
        }
     }
     
-    printf(" %d", values[0]);
-    printf(" %d", values[1]);
-    printf(" %d", values[2]);
+    //printf(" %d", values[0]);
+    //printf(" %d", values[1]);
+    //printf(" %d", values[2]);
 
 
     if(i % 2 == 0){
@@ -67,11 +69,19 @@ int main(){
     } else {
         values[0] = -values[0];
     }
+    int s = values[length-3], t = values[1];
+    //printf("%d\n%d", values[length -2], values[length -1]);
     
-    printf("%d\n%d", values[length -2], values[length -1]);
-    printf("\nS = %d", values[length-3]);
-    printf("\nT = %d", values[1]);
     
+    printf("################  -  RESULTADOS  -  ################\n\n");   
+    if(abs(s) > abs(t)){
+        printf("     ## mdc(%d, %d) = (%d) . %d + (%d) . %d\n",A, B, t, A, s, B);
+    } else {
+        printf("     ## mdc(%d, %d) = (%d) . %d + (%d) . %d\n",A, B, s, A, t, B);
+    }
+
+    printf("\n\n     ## s = %d", s);
+    printf(" | t = %d\n\n", t);
 
 
 
