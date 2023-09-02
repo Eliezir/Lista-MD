@@ -81,8 +81,28 @@ b mod m.
 9. Escrever um programa para encontrar a solução única de três congruências usando
 o Teorema Chinês do Resto. (Lembre-se de verificar se os módulos são coprimos).
 
+        ENTRADA:
 
-10. **Generalize o programa da questão anterior para funcionar com n congruências ao
+        *3 linhas contendo os valores de r e m separadas por 1 espaço 
+        
+        SAÍDA: 
+        *Valor da solução única
+
+        #EXEMPLO
+
+        ENTRADA: 
+        2 3
+        4 5
+        6 7
+
+        SAÍDA:
+        ## Solução: 104
+        
+
+
+
+
+11. **Generalize o programa da questão anterior para funcionar com n congruências ao
 invés de somente 3, onde n será dado pelo usuário.**
 
         ENTRADA:
