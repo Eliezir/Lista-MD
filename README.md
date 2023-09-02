@@ -24,17 +24,32 @@ goritmo de Euclides.
 6. Escrever um programa para encontrar os coeficientes s e t da combinação linear
 mdc(a, b) = s · a + t · b.
 
+        ENTRADA:
+
+        * 1 linha contendo os valores de a e b separadas por 1 espaço 
+        
+        SAÍDA: 
+        *Combinação linear do mdc(a,b), seguido pelos valores de s e t 
+
+        #EXEMPLO
+
+        ENTRADA: 
+        11 70
+
+        SAÍDA:
+        mdc(70, 11) = (3) . 70 + (-19) . 11
+        s = -19 | t = 3
 
 7. Escrever um programa para encontrar o inverso de a mod b.
 
         ENTRADA:
 
-        -1 linha contendo os valores de a e m separadas por 1 espaço 
+        *1 linha contendo os valores de a e m separadas por 1 espaço 
         
         SAÍDA: 
-        -Valor(es) do inverso de a
+        *Valor(es) do inverso de a
 
-        ###EXEMPLO
+        #EXEMPLO
 
         ENTRADA: 
         3 7
@@ -48,12 +63,12 @@ b mod m.
 
         ENTRADA:
 
-        -1 linha contendo os valores de a, b e m separadas por 1 espaço 
+        *1 linha contendo os valores de a, b e m separadas por 1 espaço 
         
         SAÍDA: 
-        -Valor(es) de X que satisfaça a  congruência (Caso possível)
+        *Valor(es) de X que satisfaça a  congruência (Caso possível)
 
-        ###EXEMPLO
+        #EXEMPLO
 
         ENTRADA: 
         33 38 280
@@ -72,13 +87,13 @@ invés de somente 3, onde n será dado pelo usuário.**
 
         ENTRADA:
 
-        -Quantidade das n congruências (0 < n <= 100) 
-        -n linhas com os valores b e m separados por um espaço 
+        *Quantidade das n congruências (0 < n <= 100) 
+        *n linhas com os valores b e m separados por um espaço 
 
         SAÍDA: 
-        -Valor de X que satisfaça as congruências (Se esse X existir)
+        *Valor de X que satisfaça as congruências (Se esse X existir)
 
-        ###EXEMPLO 
+        #EXEMPLO 
 
         ENTRADA: 
         3 
