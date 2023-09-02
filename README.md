@@ -3,21 +3,92 @@
 
 1. Escrever um programa que determina se um dado número inteiro é primo ou não.
 
+        ENTRADA:
+
+        * 1 linha contendo o valores do num primo
+        
+        SAÍDA: 
+        * Determina se o número é ou não primo
+
+        #EXEMPLO
+
+        ENTRADA: 
+        7
+
+        SAÍDA:
+        O número 7 não é Primo
+   
 2. Escrever um programa para listar números primos sequencialmente. Você deve
 otimizar o programa para que ele liste o maior número possível de primos em 60
 segundos.
+        
+        SAÍDA: 
+        * Valor máximo de números primos dados num intervalo de 60 SEGUNDOS
 
+        #EXEMPLO
+
+        SAÍDA:
+        75000000
+   
 3. Escrever um programa para decompor um determinado número inteiro em seus
 fatores primos.
+
+        ENTRADA:
+
+        * 1 linha contendo o valor do número a ser decomposto
+        
+        SAÍDA: 
+        * Passo a passo da decomposição do número em seus fatores primos
+
+        #EXEMPLO
+
+        ENTRADA: 
+        660
+
+        SAÍDA:
+        660 / 2 = 330
+        330 / 2 = 165
+        165 / 3 = 55
+        55 / 5 = 11
+        11 / 11 = 1
 
 
 4. Escrever um programa para determinar o mdc e o mmc de dois inteiros com base
 em seus fatores primos.
 
+         ENTRADA:
 
+        * 1 linha contendo os valores de a e b separadas por 1 espaço 
+        
+        SAÍDA: 
+        * MDC E MMC do número com base em seus fatores primos
+   
+        #EXEMPLO
 
+        ENTRADA: 
+        60 6
+
+        SAÍDA:
+        MDC: 6
+        MMC: 60
+        
 5. Escrever um programa para determinar o mdc de dois números com base no Al-
 goritmo de Euclides.
+
+        ENTRADA:
+
+        * 1 linha contendo os valores de a e b separadas por 1 espaço 
+        
+        SAÍDA: 
+        * MDC dos dois números com base no algarismo de Euclides
+   
+        #EXEMPLO
+
+        ENTRADA: 
+        500 10
+
+        SAÍDA:
+        MDS(500, 10) = 10
 
 
 
@@ -102,7 +173,7 @@ o Teorema Chinês do Resto. (Lembre-se de verificar se os módulos são coprimos
 
 
 
-11. **Generalize o programa da questão anterior para funcionar com n congruências ao
+10. **Generalize o programa da questão anterior para funcionar com n congruências ao
 invés de somente 3, onde n será dado pelo usuário.**
 
         ENTRADA:
