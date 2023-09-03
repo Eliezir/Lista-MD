@@ -16,6 +16,6 @@ int ehPrimo(int x, int contador) {
 int main() {
   int num;
   scanf("%d",&num);
-  printf("O número %d %s\n", num, !ehPrimo(num, 2) ? "é primo" : "não é Primo");
+  printf("O número %d %s\n", num, ehPrimo(num, 2) ? "é primo" : "não é primo");
   return 0;
 } 
