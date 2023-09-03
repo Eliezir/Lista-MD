@@ -20,7 +20,7 @@ int main(void) {
   time_t endwait;
   time_t start = time(NULL);
   int num = 3;
-  endwait = start + 1;
+  endwait = start + 60;
   printf("2\n3\n");
   for(;time(NULL) < endwait; num += 2){
 
