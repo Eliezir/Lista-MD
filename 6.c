@@ -1,90 +1,50 @@
-/*
-6. Escrever um programa para encontrar os coeficientes s e t da combinação linear
-mdc(a, b) = s · a + t · b.
-*/
+/*Resolver o seguinte problema: mdc(a,b) = am +bn*/
 
 #include <stdio.h>
-#include <math.h>
-#include <stdlib.h>
 
+int inverso_modular( unsigned long long int a,  unsigned long long int b){
+    //Quantia de linhas no algoritimo de euclides 
+    int i = 1000;
 
-int main(){
+    //Declarando os vetores necessários
+    unsigned long long int resto[i] ,  quociente[i], m[i], n[i], expoente = a, mod_k = b;
 
-    printf("Digite os valores (a e b) separados por um espaço\n");
-    int a, b;
-    scanf("%d %d", &a, &b);
-   
-    //Reodernando de forma Decrescente 
-    if (b>a){
-        int aux = b;
-        b = a;
-        a = aux;
-    }
+    //Definindo os dois valores iniciais que são conhecidos 
+    resto[0] = a; resto[1] = b;
+    m[0] = 1; m[1] = 0;
+    n[0] = 0; n[1] = 1;
 
-    int A = a, B = b; 
-    
-    //Definindo os Arrays Necessários
-    int quotient[100] = {}, values[100] = {};
-    
-
-    //Determinando o mdc entre a e b
-    int i = 0;
-    int rest;
-    while (a%b != 0)
-    {   
-        quotient[i] = a/b;
-        rest = a%b;
-        a = b; 
-        b = rest;
-        i++;
-        //printf("Valor de i é: %d\n", i);
-    }
-    
-  
-    if(b != 1){
-        printf("%d e %d não são primos entre si.\nPois possuem mdc igual a %d.\nLogo não possui solução!\n", A,B,b);
-    }
-    
-    int length = i ; 
-    
-    
-    for (int i = length - 1; i >= 0; i--)
+    int index = 0; 
+    while (a % b != 0)
     {
-       if( i == length -1){
-            values[i] = quotient[i] * 1; 
-       } else if (i == length - 2){
-            values[i] = quotient[i]*values[i+1] + 1;
-       } else {
-            values[i] = quotient[i]*values[i+1] + values[i+2];
-       }
+        quociente[index + 2] = resto[index] / resto[index + 1];
+        resto[index + 2] = resto[index] % resto[index+1];
+
+        m[index+2] = m[index] - (m[index+1] * quociente[index+2]);
+        n[index+2] = n[index] - (n[index+1] * quociente[index+2]);
+
+        a = b;
+        b = resto[index + 2];
+
+        index++;
     }
-    
-    //printf(" %d", values[0]);
-    //printf(" %d", values[1]);
-    //printf(" %d", values[2]);
-
-
-    if(i % 2 == 0){
-        values[1] = -values[1];
-    } else {
-        values[0] = -values[0];
-    }
-    int s = values[length-3], t = values[1];
-    //printf("%d\n%d", values[length -2], values[length -1]);
-    
-    
-    printf("################  -  RESULTADOS  -  ################\n\n");   
-    if(abs(s) > abs(t)){
-        printf("     ## mdc(%d, %d) = (%d) . %d + (%d) . %d\n",A, B, t, A, s, B);
-    } else {
-        printf("     ## mdc(%d, %d) = (%d) . %d + (%d) . %d\n",A, B, s, A, t, B);
-    }
-
-    printf("\n\n     ## s = %d", s);
-    printf(" | t = %d\n\n", t);
-
-
-
+   
+    /*while( m[index+1] < 0){
+        m[index+1] =  m[index+1] + mod_k; 
+    }*/
+    //printf("O inverso %lld mod %lld é %lld\n",resto[0], resto[1], m[index+1]);
+    printf("mdc(%lld, %lld) = %lld(%lld) + %lld(%lld)\n", expoente, mod_k, expoente, m[index+1], mod_k, n[index+1]);
+    printf("m = %lld | n = %lld\n", m[index+1], n[index+1]);
 
     return 0;
+}
+
+int main(){
+    unsigned long long int e, k; 
+    //Lendo os valores de a e b 
+    scanf("%lld %lld", &e, &k);
+
+    int d = inverso_modular(e, k);
+
+    return 0; 
 }
